@@ -38,7 +38,7 @@
 
 `blog.views.post_detail`는 우리가 만들려고 하는 경로인 `post_detail` *view* 입니다. 반드시 주의하세요 : `blog`는 우리의 응용 프로그램 (디렉토리 `blog`)의 이름이에요. `views`는 `views.py` 파일의 이름에서 나온 것이에요. 마지막인 `post_detail`는 *view* 의 이름입니다.
 
-http://127.0.0.1:8000/를 열어보세요. 오류 메세지가 나올 거에요. (예상대로, 아직 `post_detail`을 위한 *view* 파일 만들지 않아 오류가 나는 것이죠.) 아마 이렇게 나왔을 거에요. :
+다음 페이지를 열어보세요: http://127.0.0.1:8000/ 오류 메세지가 나올 거에요. (예상대로, 아직 `post_detail`을 위한 *view* 파일 만들지 않아 오류가 나는 것이죠.) 아마 이렇게 나왔을 거에요. :
 
 ![NoReverseMatch error][1]
 
@@ -107,7 +107,7 @@ urlpatterns = [
     from django.shortcuts import render, get_object_or_404
 ```
 
-`from`행 근처로 가서, 파일 맨 끝에 *view* 를 추가하세요. :
+`from`행 근처로부터 떨어진, 파일 맨 끝에 *view* 를 추가하세요. :
 
 ```python
     def post_detail(request, pk):
